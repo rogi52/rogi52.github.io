@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'it';
-  src: url("font/cmunbi.ttf") format("truetype");
+  src: url("font/cmunti.ttf") format("truetype");
 }
 
 @font-face {
@@ -80,12 +80,20 @@ h3 {
 
 .paper {
   margin-bottom: 40px;
+  border: solid 2px black;
+  padding: 0em 1em;
+}
+
+.journal {
+  font-family: 'it';
 }
 
 a {
   text-decoration: none;
   color: black;
-  border: 2px solid red;
+  border: 1px solid red;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 a:hover {
