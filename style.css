@@ -20,12 +20,12 @@
 
 @font-face {
   font-family: 'ja-m';
-  src: url("font/ipaexm.ttf") format("truetype");
+  src: url("font/NotoSerifCJKjp-Regular.min.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'ja-g';
-  src: url("font/ipaexg.ttf") format("truetype");
+  font-family: 'ja-b';
+  src: url("font/NotoSerifCJKjp-Bold.min.ttf") format("truetype");
 }
 
 html {
@@ -52,7 +52,7 @@ h1, h2, h3 {
 
 h1 {
   font-variant-caps: small-caps;
-  font-family: 'bf', 'ja-m';
+  font-family: 'bf', 'ja-b';
   font-size: 22px;
   margin-bottom: 20px;
 }
@@ -61,11 +61,11 @@ h2 {
   font-variant-caps: small-caps;
   font-size: 20px;
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 h3 {
-  font-family: 'bf', 'ja-m';
+  font-family: 'bf', 'ja-b';
   font-size: 18px;
   margin-top: 20px;
   text-align: left;
@@ -97,12 +97,12 @@ h3 {
 }
 
 .journal {
-  font-family: 'rm';
+  font-family: 'rm', 'ja-m';
   text-indent: 1rem;
 }
 
 .author {
-  font-family: 'rm';
+  font-family: 'rm', 'ja-m';
   text-indent: 1rem;
 }
 
@@ -123,9 +123,8 @@ a:hover {
 }
 
 .page-author {
-  font-weight: bold;
   font-variant-caps: small-caps;
-  font-family: 'bf', 'ja-m';
+  font-family: 'bf', 'ja-b';
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
