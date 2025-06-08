@@ -1,31 +1,26 @@
 @font-face {
-  font-family: 'rm';
+  font-family: 'cmrm';
   src: url("font/cmunrm.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'bf';
+  font-family: 'cmbf';
   src: url("font/cmunbx.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'it';
+  font-family: 'cmit';
   src: url("font/cmunti.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'tt';
+  font-family: 'cmtt';
   src: url("font/cmuntt.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'ja-m';
+  font-family: 'ja';
   src: url("font/NotoSerifCJKjp-Regular.min.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: 'ja-b';
-  src: url("font/NotoSerifCJKjp-Bold.min.ttf") format("truetype");
 }
 
 html {
@@ -33,42 +28,45 @@ html {
 }
 
 body {
-  font-family: 'rm', 'ja-m';
+  font-family: 'cmrm', 'ja';
   max-width: 700px;
   min-height: 100vh;
   margin: 0px auto;
   padding: 7%;
   padding-top: max(60px,7%);
   line-height: 1.5;
-  background-color: white;
+  background-color: #f9f9f9;
   color: black;
   font-size: 18px;
 }
 
 h1, h2, h3 {
-  font-weight: normal;
   text-align: center;
 }
 
 h1 {
   font-variant-caps: small-caps;
-  font-family: 'bf', 'ja-b';
+  font-family: 'cmbf', sans-serif;
   font-size: 22px;
   margin-bottom: 20px;
 }
 
 h2 {
   font-variant-caps: small-caps;
+  font-family: 'cmrm', 'ja';
+  font-weight: normal;
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 15px;
 }
 
 h3 {
-  font-family: 'bf', 'ja-b';
+  font-weight: bold;
+  font-family: sans-serif;
   font-size: 18px;
-  margin-top: 20px;
   text-align: left;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .abstract {
@@ -77,70 +75,43 @@ h3 {
   margin-bottom: 20px;
   font-size: 16px;
 }
-  
-.contents {
-  /* list-style: none; */
-  padding-left: 3%;
-  padding-right: 3%;
-  margin-bottom: 30px;
-}
-  
-.contents li {
-  margin: 5px 0;
-}
 
 .paper {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   border: solid 2px black;
   padding: 0em 1em;
   background-color: rgba(211, 211, 211, 0.3);
 }
 
-.journal {
-  font-family: 'rm', 'ja-m';
-  text-indent: 1rem;
-}
-
-.author {
-  font-family: 'rm', 'ja-m';
-  text-indent: 1rem;
-}
-
 a {
   text-decoration: none;
-  color: black;
-  border-bottom: 1px solid red;
-  padding-left: 3px;
-  padding-right: 3px;
+  color:crimson;
 }
 
 a:hover {
-  background-color: lightgray;
-}
-  
-.normal{
-  text-indent: 1rem;
+  /*
+  background-color: crimson;
+  color: #f9f9f9;
+  */
+  /* color: crimson;
+  border-bottom: solid 1px crimson; */
+  color: crimson;
+  text-decoration: underline;
+  text-decoration-color: crimson;
 }
 
 .page-author {
   font-variant-caps: small-caps;
-  font-family: 'bf', 'ja-b';
+  font-weight: bold;
+  font-family: 'cmbf', 'ja';
   text-align: center;
   font-size: 25px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
-.page-author::first-letter {
-  color:red;
-}
-
-.me {
-  display: inline-block;
-  text-indent: 0rem;
-}
-.me::first-letter {
-  color: red;
-}
+/* .page-author::first-letter {
+  color:crimson;
+} */
 
 img {
   max-width: 200px;
